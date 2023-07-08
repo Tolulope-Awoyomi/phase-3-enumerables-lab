@@ -70,6 +70,6 @@ end
 # the average heat level of all the spicy foods in the array
 def average_heat_level(spicy_foods)
   total_heat = spicy_foods.sum { |food| food[:heat_level] }
-  average = total_heat.to_f / spicy_foods.length
+  average = total_heat / spicy_foods.length
   average
 end
